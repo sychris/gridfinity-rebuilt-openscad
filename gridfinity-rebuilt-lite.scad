@@ -49,7 +49,7 @@ div_base_x = 0;
 // number of divisions per 1 unit of base along the Y axis. (default 1, only use integers. 0 means automatically guess the right division)
 div_base_y = 0; 
 // thickness of bottom layer
-bottom_layer = 1;
+bottom_layer = 0.4;
 
 
 // ===== IMPLEMENTATION ===== //
@@ -84,7 +84,7 @@ module gridfinityLite(gridx, gridy, gridz, gridz_define, style_lip, enable_zsnap
                     translate([0,0,bottom_layer])
                     rounded_rectangle(gridx*1000, gridy*1000, 1000, r_f2);
                 }
-                translate([0,0,h_base+d_clear])
+                translate([0,0,h_base+d_clear+0.2])
                 rounded_rectangle(gridx*length-0.5005-d_wall*2, gridy*length-0.5005-d_wall*2, h_base, r_f2);
             }
 
