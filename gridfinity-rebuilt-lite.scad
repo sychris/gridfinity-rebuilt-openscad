@@ -20,17 +20,17 @@ gridx = 3;
 // number of bases along y-axis   
 gridy = 3;  
 // bin height. See bin height information and "gridz_define" below.  
-gridz = 6;
+gridz = 4;
 
 /* [Compartments] */
 // number of X Divisions
-divx = 2;
+divx = 1;
 // number of y Divisions
-divy = 2;
+divy = 1;
 
 /* [Toggles] */
 // snap gridz height to nearest 7mm increment
-enable_zsnap = false;
+enable_zsnap = true;
 // how should the top lip act
 style_lip = 0; //[0: Regular lip, 1:remove lip subtractively, 2: remove lip and retain height]
 
